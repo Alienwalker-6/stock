@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Stock Prediction Dashboard</title>
+</head>
+
+<body>
+
+<h1>Stock Market Trend Prediction</h1>
+
+<form method="POST">
+
+Enter Stock Name:
+<input type="text" name="stock" placeholder="AAPL">
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h2>Stock: {{stock}}</h2>
+
+<h2>Predicted Trend: {{trend}}</h2>
+
+<h2>Signal: {{signal}}</h2>
+
+<h2>Model Accuracy: {{accuracy}} %</h2>
+
+<div>
+{{chart|safe}}
+</div>
+
+</body>
+</html>
